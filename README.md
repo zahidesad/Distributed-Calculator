@@ -1,7 +1,53 @@
 # Distributed Calculator Project
 
+## How to Run
+
+### Prerequisites
+- Linux-based operating system.
+- GNU Compiler Collection (GCC) installed.
+- Basic familiarity with terminal commands and Unix/Linux system calls.
+
+### Steps to Run the Program
+1. **Clone the Repository**
+   ```bash
+   git clone <repository-url>
+   cd <repository-folder>
+   ```
+
+2. **Compile the Source Code**
+   Use the provided `Makefile` to compile all the source files into their respective binaries:
+   ```bash
+   make
+   ```
+
+3. **Run the Main Program**
+   Execute the `calculator` binary to start the program:
+   ```bash
+   ./calculator
+   ```
+
+4. **Interact with the Program**
+   - Choose an arithmetic operation (addition, subtraction, multiplication, division) from the menu.
+   - Enter the required operands when prompted.
+   - View the result on the terminal.
+   - Continue performing operations until you choose the "exit" option.
+
+5. **View Saved Results**
+   Results of each operation are logged into `results.txt` by the saver program. Open this file to view the operation history:
+   ```bash
+   cat results.txt
+   ```
+
+6. **Clean Up**
+   To remove compiled binaries and clean the directory:
+   ```bash
+   make clean
+   ```
+
+
+
 ## Project Topic
-The **Distributed Calculator Project** is designed to demonstrate process creation, inter-process communication (IPC), and basic operating system concepts such as pipes, `fork`, and `exec` system calls. This project implements a simple distributed calculator system, where each arithmetic operation (addition, subtraction, multiplication, and division) is handled by a separate process. The main program (`Calculator`) interacts with these processes using dedicated pipes for data transfer. Additionally, a separate saver program is utilized to log results into a file (`results.txt`).
+The **Distributed Calculator Project** is designed to demonstrate process creation, inter-process communication (IPC), and basic operating system concepts such as `pipes`, `fork`, and `exec` system calls. This project implements a simple distributed calculator system, where each arithmetic operation (addition, subtraction, multiplication, and division) is handled by a separate process. The main program (`Calculator`) interacts with these processes using dedicated pipes for data transfer. Additionally, a separate saver program is utilized to log results into a file (`results.txt`).
 
 ### Key Objectives
 - Utilizing Linux system calls to manage processes and communication.
